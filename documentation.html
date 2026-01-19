@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- color of address bar in mobile browser -->
+    <meta name="theme-color" content="#28292C">
+    <!-- favicon  -->
+    <title>Courtney documentation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #E56734;
+            color: #FDFDFF;
+        }
+
+        header {
+            padding: 90px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 72px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        a {
+            color: #FDFDFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FDFDFF;
+            text-decoration: underline;
+        }
+
+        pre {
+            overflow-x: auto;
+            padding: 60px;
+            background-color: #1A2430;
+            color: #FDFDFF;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Courtney documentation</h1>
+            <h3>Thank you for purchasing!</h3>
+        </header>
+        <section class="marcup">
+            <h2>App HTML marcup</h2>
+            <br>
+            <br>
+
+            <pre style="margin: 0; line-height: 125%"><span style="color: #cd2828; font-weight: bold">&lt;!DOCTYPE html&gt;</span>
+<span style="color: #6ab825; font-weight: bold">&lt;html</span> <span style="color: #bbbbbb">lang=</span><span style="color: #ed9d13">&quot;zxx&quot;</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;is-animating&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;head&gt;</span>
+
+    ...
+
+<span style="color: #6ab825; font-weight: bold">&lt;/head&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;body&gt;</span>
+
+    <span style="color: #999999; font-style: italic">&lt;!-- wrapper --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-wrapper&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;top&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- preloader --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-preloader-frame&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            ...
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- preloader end --&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-frame&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+            <span style="color: #999999; font-style: italic">&lt;!-- top bar --&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-top-panel&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                ...
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #999999; font-style: italic">&lt;!-- top bar end --&gt;</span>
+
+            <span style="color: #999999; font-style: italic">&lt;!-- left bar --&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-left-panel&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                ...
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #999999; font-style: italic">&lt;!-- left bar end --&gt;</span>
+
+            <span style="color: #999999; font-style: italic">&lt;!-- back to top --&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-back-to-top&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                ...
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #999999; font-style: italic">&lt;!-- back to top end --&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- content --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-content&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-scroll-wrapper transition-fade&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;swupMain&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                ...
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-right-banner&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;scene&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                ...
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- content --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- wrapper end --&gt;</span>
+
+    ...
+
+<span style="color: #6ab825; font-weight: bold">&lt;/body&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;/html&gt;</span>
+</pre>
+
+
+            <br>
+            <br>
+
+        </section>
+        <section class="css-assets">
+            <br>
+            <br>
+            <h2>CSS assets</h2>
+            <p>Plugins</p>
+            <ul>
+                <li><a target="_blank" href="https://getbootstrap.com">Bootstrap grid</a></li>
+                <li><a target="_blank" href="https://fontawesome.com/v5/search">Font awesome</a></li>
+                <li><a target="_blank" href="https://idangero.us/swiper/">Swiper</a></li>
+            </ul>
+            <br>
+            <p>Courtney scss</p>
+            <ul>
+
+                <li>_variables-light.scss</li>
+                <li>_variables-dark.scss</li>
+                <li>_variables.scss</li>
+                <li>_common.scss</li>
+                <li>_components.scss</li>
+                <br>
+                <li>style-light.scss <i>(compiled in light-mode.css)</i></li>
+                <li>style-dark.scss <i>(compiled in dark-mode.css)</i></li>
+
+            </ul>
+            <br>
+            <p>Courtney css</p>
+            <ul>
+                <li>light-mode.css <i>(Include this CSS file if you want to use light mode.)</i></li>
+                <li>dark-mode.css <i>(Include this CSS file if you want to use dark mode.)</i></li>
+            </ul>
+            <br>
+            <br>
+
+            <pre style="margin: 0; line-height: 125%"><span style="color: #6ab825; font-weight: bold">&lt;head&gt;</span>
+
+    ...
+
+    <span style="color: #999999; font-style: italic">&lt;!-- bootstrap grid css --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/plugins/bootstrap-grid.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- font awesome css --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/plugins/font-awesome.min.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- swiper css --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/plugins/swiper.min.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- courtney css --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/dark-mode.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- page name --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;title&gt;</span>Courtney<span style="color: #6ab825; font-weight: bold">&lt;/title&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;/head&gt;</span>
+</pre>
+
+
+
+        </section>
+        <section class="js assets">
+            <br>
+            <br>
+            <h2>Js assets</h2>
+            <p>Plugins</p>
+            <ul>
+
+                <li><a target="_blank" href="https://jquery.com">jQuery</a></li>
+                <li><a target="_blank" href="https://swup.js.org/">Swup</a></li>
+                <li><a target="_blank" href="https://swup.js.org/plugins/body-class-plugin/">Swup body class plugin</a></li>
+                <li><a target="_blank" href="https://idangero.us/swiper/">Swiper</a></li>
+                <li><a target="_blank" href="https://greensock.com/gsap/">GSAP</a></li>
+                <li><a target="_blank" href="https://www.smoothscroll.net/win/">Smooth scroll</a></li>
+                <li><a target="_blank" href="https://greensock.com/scrolltrigger/">ScrollTrigger</a></li>
+                <li><a target="_blank" href="https://matthew.wagerfield.com/parallax/">Parallax</a></li>
+                
+
+            </ul>
+            <br>
+            <p>Courtney assets</p>
+            <ul>
+                <li>main.js</li>
+            </ul>
+            <br>
+            <br>
+
+            <pre style="margin: 0; line-height: 125%"><span style="color: #6ab825; font-weight: bold">&lt;body&gt;</span>
+
+    ...
+
+    <span style="color: #999999; font-style: italic">&lt;!-- jQuery js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/jquery.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- swup js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/swup.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- swup body class plugin js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/SwupBodyClassPlugin.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- swiper js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/swiper.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- gsap js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/gsap.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- scroll smoother --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/smooth-scroll.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- scroll trigger js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/ScrollTrigger.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- parallax js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/parallax.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- itsulu js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/main.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;/body&gt;</span>
+</pre>
+
+
+        </section>
+        <section class="fonts">
+            <br>
+            <br>
+            <h2>Fonts</h2>
+            <ul>
+                <li><a target="_blank" href="https://fonts.google.com/specimen/Outfit?query=outfit">Outfit</a></li>
+            </ul>
+            <br>
+            <h2>Icons</h2>
+            <ul>
+                <li><a target="_blank" href="https://www.flaticon.com/">Flaticon</a></li>
+                <li><a target="_blank" href="https://fontawesome.com/v5/search">Font awesome</a></li>
+                <li><a target="_blank" href="https://feathericons.com/">Feather</a></li>
+            </ul>
+
+        </section>
+        <br>
+        <br>
+    </div>
+</body>
+
+</html>
