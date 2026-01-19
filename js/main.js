@@ -48,6 +48,11 @@ $(function () {
                 }
             }
             
+            // Add base path for GitHub Pages subdirectories
+            if (window.basePath) {
+                href = window.basePath + href;
+            }
+            
             // Show preloader
             $('html').addClass('is-animating');
             $('.mil-preloader-frame').css('height', '100%');

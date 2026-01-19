@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zxx" class="is-animating">
 
 <head>
@@ -6,6 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Base path for GitHub Pages -->
+    <script>
+        window.basePath = '';
+        if (window.location.hostname.includes('github.io')) {
+            var pathSegments = window.location.pathname.split('/').filter(p => p);
+            if (pathSegments.length > 0 && !pathSegments[0].includes('.') && !pathSegments[pathSegments.length - 1].includes('.')) {
+                var knownPages = ['contact', 'blog', 'portfolio', 'project', 'publication', 'home', 'service', 'services', 'story', '404'];
+                if (!knownPages.includes(pathSegments[0])) {
+                    window.basePath = '/' + pathSegments[0];
+                }
+            }
+        }
+    </script>
 
     <!-- bootstrap grid css -->
     <link rel="stylesheet" href="../css/plugins/bootstrap-grid.css">
@@ -381,7 +394,7 @@
 
                     <!-- footer -->
                     <footer class="mil-fw">
-                        <p class="mil-light-soft">© 2023. Courtney. All rights reserved.</p>
+                        <p class="mil-light-soft">Â© 2023. Courtney. All rights reserved.</p>
                         <p class="mil-light-soft">Author: &nbsp;<a href="https://themeforest.net/user/millerdigitaldesign/portfolio" target="_blank">Nazar Miller</a></p>
                     </footer>
                     <!-- footer end -->
@@ -452,6 +465,7 @@
 </body>
 
 </html>
+
 
 
 
